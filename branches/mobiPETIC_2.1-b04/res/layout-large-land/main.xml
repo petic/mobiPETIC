@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_back" >
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="5dip"
+            android:src="@drawable/mobipetic_logo_menor2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageLogo"
+            android:layout_alignParentRight="true"
+            android:gravity="right|top" >
+			
+            <Button
+                android:id="@+id/imageHome"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/menu_back"
+                android:drawableTop="@drawable/home5"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="6dip"
+                android:gravity="right" />
+            
+            <Button
+                android:id="@+id/imageOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/menu_back"
+                android:drawableTop="@drawable/machine"
+                android:gravity="right"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="6dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separadorTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#90909090" />
+
+    <View
+        android:id="@+id/separadorTitulo2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+ 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:background="@color/light_gray2" >
+
+    	<FrameLayout
+    	    android:id="@+id/fragment_container_funcoes"
+    	    android:layout_width="200dip"
+    	    android:layout_height="fill_parent"
+    	    android:background="@color/light_gray2" />
+    	
+    	<FrameLayout
+	        android:id="@+id/fragment_container_catalogo"
+    	    android:layout_width="0dip"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="@color/light_gray2" />
+    	
+    	<FrameLayout
+	        android:id="@+id/fragment_container_detalhes"
+    	    android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="@color/light_gray2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item_descricao" android:title="@string/menu_descricao"></item>
+    <item android:id="@+id/item_maturidade" android:title="@string/menu_maturidade" android:titleCondensed="@string/menu_condens_maturidade"></item>
+    <item android:id="@+id/item_acoes" android:title="@string/menu_acoes" android:titleCondensed="@string/menu_condens_acoes"></item>
+</menu>
