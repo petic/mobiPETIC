@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item_editar_acao" android:title="@string/menu_editar_acao"></item>
+    <item android:id="@+id/item_remover_acao" android:title="@string/menu_remover_acao"></item>
+    <item android:id="@+id/item_adicionar_acao" android:title="@string/menu_adicionar_acao"></item>
+    
+
+</menu>

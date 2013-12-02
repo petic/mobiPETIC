@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item_criar_acao" android:title="@string/menu_criar_acao"></item><item android:id="@+id/item_option_maturidade" android:title="@string/menu_maturidade" android:titleCondensed="@string/menu_condens_maturidade"
+        android:icon="@drawable/statistics"/>
+    <item android:id="@+id/item_option_acoes" android:title="@string/menu_acoes" android:titleCondensed="@string/menu_condens_acoes"></item><item android:id="@+id/item_sincronizar" android:titleCondensed="@string/menu_condens_sincronizar" android:title="@string/menu_sincronizar" android:enabled="false"></item><item android:id="@+id/item_sobre" android:title="@string/menu_sobre"
+        android:icon="@drawable/comments"/>
+    <item android:id="@+id/item_logout" android:title="@string/menu_logout"
+        android:icon="@drawable/logout1" />
+    
+    
+    
+
+</menu>
+<!-- android:icon="@drawable/ic_help" -->

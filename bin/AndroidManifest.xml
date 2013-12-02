@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        android:allowBackup="true" >
+        <!--android:debuggable="true"-->
+        <activity
+            android:name="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC.MobiPETICActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC.TelaPrincipalActivity" />
+        
+        <activity
+            android:name="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC.DownloadArquivos" />
+        
+        <service android:name="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC.Sincronizador" />
+
+        <provider
+            android:name="br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC.DBProvider"
+            android:authorities="peticwizard.MobiPetic.provider"
+            android:exported="false" >
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+    </application>
+
+</manifest>

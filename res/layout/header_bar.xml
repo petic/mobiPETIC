@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dip"
+        android:text="@string/txt_catalogo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@color/light_gray2" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#66CCFF" />
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+        
+        <TextView
+            android:id="@+id/txt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dip"
+            android:text="@string/descricao_acao_lista_areas"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <TextView
+            android:id="@+id/txt_separador1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/light_gray2"
+            android:text=">" />
+        
+        <TextView
+            android:id="@+id/txt_subarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dip"
+            android:text="@string/descricao_acao_lista_subareas"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/light_gray2" />
+        
+        <TextView
+            android:id="@+id/txt_separador2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/light_gray2"
+            android:text=">" />
+        
+        <TextView
+            android:id="@+id/txt_processo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dip"
+            android:text="@string/descricao_acao_lista_processos"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/light_gray2" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

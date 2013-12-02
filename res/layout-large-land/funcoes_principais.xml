@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="1"
+    	android:gravity="center" >
+
+    	<ImageView
+        	android:id="@+id/imageViewCompanyLogo"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:contentDescription="@string/descricao_logo_empresa"
+    	    android:src="@drawable/company1" />
+	</LinearLayout>
+
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:gravity="bottom|center_horizontal" >
+
+	    <ImageButton
+           	android:id="@+id/imageButtonProcessos"
+           	android:layout_width="190dip"
+           	android:layout_height="wrap_content"
+           	android:contentDescription="@string/txt_main_catalogos"
+           	android:src="@drawable/folder" />
+	    	
+	    	<TextView
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:padding="3dip"
+            	android:text="@string/txt_main_catalogos"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:textColor="@color/black" />
+
+        	<ImageButton
+            	android:id="@+id/imageButtonUsuarios"
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+            	android:contentDescription="@string/txt_main_usuarios"
+        	    android:src="@drawable/users2" />
+
+        	<TextView
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:padding="3dip"
+            	android:text="@string/txt_main_usuarios"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+        	    android:textColor="@color/black" />
+    
+        	<ImageButton
+            	android:id="@+id/imageButtonAnalise"
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+            	android:contentDescription="@string/txt_main_analise"
+            	android:src="@drawable/chart2" />
+        	
+        	<TextView
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:padding="3dip"
+            	android:text="@string/txt_main_analise"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:textColor="@color/black" />
+
+        	<ImageButton
+            	android:id="@+id/imageButtonAcoes"
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+            	android:contentDescription="@string/txt_main_acoes"
+            	android:src="@drawable/note_accept_original" />
+
+        	<TextView
+            	android:layout_width="190dip"
+            	android:layout_height="wrap_content"
+           		android:gravity="center"
+         		android:padding="3dip"
+            	android:text="@string/txt_main_acoes"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+        	    android:textColor="@color/black" />
+	</LinearLayout>
+</LinearLayout>
